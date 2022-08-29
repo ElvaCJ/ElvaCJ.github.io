@@ -9,7 +9,7 @@
     <meta name="author" content="Chanjoo Park">
     <link rel="icon" type="image/png" href="img/favicon.png"/>
     <script src="https://kit.fontawesome.com/4b2adb81aa.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
@@ -18,13 +18,13 @@
     <nav id="navbar">
         <div class="navbar_logo">
             <img src="/img/favicon.png" alt="">
-            <a href="#">Chanjoo</a>
+            <a href="#">CJ</a>
         </div>
         <ul class="navbar_menu">
-            <li class="navbar_menu_item">Home</li>
+            <li class="navbar_menu_item active">Home</li>
             <li class="navbar_menu_item">About</li>
             <li class="navbar_menu_item">Skills</li>
-            <li class="navbar_menu_item">My work and proejcts</li>
+            <li class="navbar_menu_item">Works and Proejcts</li>
             <li class="navbar_menu_item">Testimonials</li>
             <li class="navbar_menu_item">Contact</li>
         </ul>
@@ -32,14 +32,17 @@
     <!-- Home -->
     <section id="home">
         <h1 class="home_title">Chanjoo Park's Portfolio</h1>
-        <h2 class="home_description">on the way to be a front-end programmer</h2>
-        <button class="home_contact">Contact Me</button>
+        <h3 class="home_description">on the way to be a front-end developer</h2>
+        <button class="home_button">Scroll Down<i class="fa-solid fa-chevron-down"></i></button>     
     </section>
     <!-- Intro -->
     <section id="intro">
-        <h1>Intro</h1>
-        <img class="profile_avatar" src="/img/profilePic.JPG" alt="Chanjoo's profile pic">
-        <p>안녕하세요, 신입 프론트엔드 개발자 박찬주입니다. 호기심 많고 실행력이 강한 성격 덕분에 다양한 분야에서의 경험을 가지고 있습니다. 대학교 졸업을 앞두고 프론트엔드 개발자라는 꿈을 가지게 되면서 끊임없이 배우고 도전하는 여정을 즐기고 있는 중입니다:)</p>
+        <div class="profile_box">
+            <h1>INTRO</h1>
+            <img src="img/profilePicSquare.jpeg" alt="프로필 사진" class="profile_avatar">
+            <p class="profile_description">안녕하세요, 신입 프론트엔드 개발자 박찬주입니다. <br>호기심 많고 실행력이 강한 성격 덕분에 다양한 분야에서의 경험을 가지고 있습니다. <br>대학교 졸업을 앞두고 프론트엔드 개발자라는 꿈을 가지게 되면서 <br>끊임없이 배우고 도전하는 여정을 즐기고 있는 중입니다:)</p>
+            <button class="intro_contact">Contact me</button>
+        </div>
     </section>
     <!-- About -->
     <section id="about">
@@ -143,8 +146,8 @@
         </div>
     </section>
 
-    <!-- Work -->
-    <section id="work">
+    <!-- Works -->
+    <section id="works">
         <h1>My Works</h1>
         <h3>Projects Category</h3>
         <div class="work_catoeries">
@@ -190,14 +193,14 @@
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
         <div class="testimonial">
-            <i class="fa-solid fa-user"></i>
+            <img src="img/testimonials/anonymous.png" alt="">
             <div class="testimonail_speechBubble">
                 <p>준비중</p>
                 <p class="name"><a href="#">name</a>where he/she works</p>
             </div>
         </div>
         <div class="testimonial">
-            <i class="fa-solid fa-user"></i>
+            <img src="img/testimonials/anonymous.png" alt="">
             <div class="testimonail_speechBubble">
                 <p>준비중</p>
                 <p class="name"><a href="#">name</a>where he/she works</p>
@@ -206,7 +209,16 @@
     </section>
     <!-- Contact -->
     <section id="contact">
-        <h1></h1>
+        <h1 class="contact_title">Contact Me :)</h1>
+        <h2 class="contact_email">cjangel0503@naver.com</h2>
+        <div class="contact_links">
+            <a href=""><i class="fa-brands fa-square-github"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p class="contact_rights">
+            2022 Chanjoo Park - All rights reserved
+        </p>
     </section>
 </body>
 </html>
