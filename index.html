@@ -9,7 +9,7 @@
     <meta name="author" content="Chanjoo Park">
     <link rel="icon" type="image/png" href="img/favicon.png"/>
     <script src="https://kit.fontawesome.com/4b2adb81aa.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
@@ -18,13 +18,13 @@
     <nav id="navbar">
         <div class="navbar_logo">
             <img src="/img/favicon.png" alt="">
-            <a href="#">CJ</a>
+            <a href="#">Chanjoo</a>
         </div>
         <ul class="navbar_menu">
-            <li class="navbar_menu_item active">Home</li>
+            <li class="navbar_menu_item">Home</li>
             <li class="navbar_menu_item">About</li>
             <li class="navbar_menu_item">Skills</li>
-            <li class="navbar_menu_item">Works and Proejcts</li>
+            <li class="navbar_menu_item">My work and proejcts</li>
             <li class="navbar_menu_item">Testimonials</li>
             <li class="navbar_menu_item">Contact</li>
         </ul>
@@ -32,41 +32,37 @@
     <!-- Home -->
     <section id="home">
         <h1 class="home_title">Chanjoo Park's Portfolio</h1>
-        <h3 class="home_description">on the way to be a front-end developer</h2>
-        <button class="home_button">Scroll Down<i class="fa-solid fa-chevron-down"></i></button>     
+        <h2 class="home_description">on the way to be a front-end programmer</h2>
+        <button class="home_contact">Contact Me</button>
     </section>
     <!-- Intro -->
     <section id="intro">
-        <div class="profile_box">
-            <h1>INTRO</h1>
-            <img src="img/profilePicSquare.jpeg" alt="프로필 사진" class="profile_avatar">
-            <p class="profile_description">안녕하세요, 신입 프론트엔드 개발자 박찬주입니다. <br>호기심 많고 실행력이 강한 성격 덕분에 다양한 분야에서의 경험을 가지고 있습니다. <br>대학교 졸업을 앞두고 프론트엔드 개발자라는 꿈을 가지게 되면서 <br>끊임없이 배우고 도전하는 여정을 즐기고 있는 중입니다:)</p>
-            <button class="intro_contact">Contact me</button>
-        </div>
+        <h1>Intro</h1>
+        <img class="profile_avatar" src="/img/profilePic.JPG" alt="Chanjoo's profile pic">
+        <p>안녕하세요, 신입 프론트엔드 개발자 박찬주입니다. 호기심 많고 실행력이 강한 성격 덕분에 다양한 분야에서의 경험을 가지고 있습니다. 대학교 졸업을 앞두고 프론트엔드 개발자라는 꿈을 가지게 되면서 끊임없이 배우고 도전하는 여정을 즐기고 있는 중입니다:)</p>
     </section>
     <!-- About -->
-    <section id="about">
-        <h1>About Me</h1>
-        <h2>skills</h2>
+    <section id="about" class="section">
+        <h1>ABOUT ME</h1>
+        <h2>Skills</h2>
         <div class="skillset">
             <div class="skillset_left">
-                <h3 class="skillset_title">Skills</h3>
                 <div class="skill">
                     <div class="skill_description">
                         <span>HTML</span>
                         <span>99%</span>
                     </div>
                     <div class="skill_bar">
-                        <div class="skill_value"></div>
+                        <div class="skill_value" style="width: 99%;"></div>
                     </div>
                 </div>
                 <div class="skill">
                     <div class="skill_description">
                         <span>CSS</span>
-                        <span>95%</span>
+                        <span>99%</span>
                     </div>
                     <div class="skill_bar">
-                        <div class="skill_value"></div>
+                        <div class="skill_value" style="width: 99%;"></div>
                     </div>
                 </div>
                 <div class="skill">
@@ -75,7 +71,7 @@
                         <span>90%</span>
                     </div>
                     <div class="skill_bar">
-                        <div class="skill_value"></div>
+                        <div class="skill_value" style="width: 90%;"></div>
                     </div>
                 </div>
                 <div class="skill">
@@ -84,29 +80,30 @@
                         <span>80%</span>
                     </div>
                     <div class="skill_bar">
-                        <div class="skill_value"></div>
+                        <div class="skill_value" style="width: 80%;"></div>
                     </div>
                 </div>
                 <div class="skill">
                     <div class="skill_description">
                         <span>REACT</span>
-                        <span>0%</span>
+                        <span>10%</span>
                     </div>
                     <div class="skill_bar">
-                        <div class="skill_value"></div>
+                        <div class="skill_value"  style="width: 10%;"></div>
                     </div>
                 </div>
                 <div class="skill">
                     <div class="skill_description">
                         <span>TYPESCRIPT</span>
-                        <span>0%</span>
+                        <span>10%</span>
                     </div>
                     <div class="skill_bar">
-                        <div class="skill_value"></div>
+                        <div class="skill_value" style="width: 10%;"></div>
                     </div>
                 </div>
+            </div>
             <div class="skillset_right">
-                <h3 class="skillset_title">Tools & etc</h3>
+                <h3 class="skillset_title">Tools</h3>
                 <ul class="tools_list">
                     <li><span>Photoshop</span></li>
                     <li><span>Adobe Illustrator</span></li>
@@ -117,37 +114,106 @@
                 </ul>
             </div>
         </div>
-
-        <h2>EDUCATION</h2>
         <div class="about_box">
-            <p>한국외국어대학교 스페인어과(전공), Global Business and Technology(이중전공)</p>
-            <p class="about_period">2018.03 ~ current</p>
-            <p>2022 웹디자인 및 스마트 UI/UX 웹퍼블리셔 양성과정 수료</p>
-            <p class="about_period">2022.04 ~ 2022.09</p>
-        </div>
-
-        <h2>EXPERIENCE</h2>
-        <div class="about_box">
-            <p>2021 Glocal Trade Expert Incubating Program 15기</p>
-            <p class="about_period">2021.02~2022.03</p>
-            <p>2020~2021 한국외대 서울캠퍼스 패션동아리 The Moda 부회장</p>
-            <p class="about_period">2020.07~2022.01</p>
-            <p>아르바이트 : 정이조 영어학원 당산점 조교(2022) / 영어종결센터 아중학원 영어강사(2021) / 에듀플렉스 돈암점 영어강사(2020)</p>
-        </div>
-
-        <h2>PRIZE</h2>
-        <div class="about_box">
-            <p>2021 Global E-commerce School 경진대회 수상</p>
-            <p class="about_period">2021.12.14</p>
-            <p>15기 GTEP 전자상거래 경진대회 입상</p>
-            <p class="about_period">2021.11.21</p>
-            <p>2021 대학생 무역캠프(대전캠프) 무역 시뮬레이션 경진대회 최우수상</p>
-            <p class="about_period">2021.08.26</p>
+            <div class="about_sub_box">
+                <h2>Education</h2>
+                <p>한국외국어대학교 스페인어과(전공), Global Business and Technology(이중전공)</p>
+                <p class="about_period">2018.03 ~ current</p>
+                <p>2022 웹디자인 및 스마트 UI/UX 웹퍼블리셔 양성과정 수료</p>
+                <p class="about_period">2022.04 ~ 2022.09</p>
+            </div>
+            <div class="about_sub_box">
+                <h2>Experience</h2>
+                <p>2021 Glocal Trade Expert Incubating Program 15기</p>
+                <p class="about_period">2021.02~2022.03</p>
+                <p>2020~2021 한국외대 서울캠퍼스 패션동아리 The Moda 부회장</p>
+                <p class="about_period">2020.07~2022.01</p>
+                <p>정이조 영어학원 당산점 조교(2022) <br>영어종결센터 아중학원 영어강사(2021) <br>에듀플렉스 돈암점 영어강사(2020)</p>
+            </div>
+            <div class="about_sub_box">
+                <h2>Prize</h2>
+                <p>2021 Global E-commerce School 경진대회 수상</p>
+                <p class="about_period">2021.12.14</p>
+                <p>15기 GTEP 전자상거래 경진대회 입상</p>
+                <p class="about_period">2021.11.21</p>
+                <p>2021 대학생 무역캠프(대전캠프) 무역 시뮬레이션 경진대회 최우수상</p>
+                <p class="about_period">2021.08.26</p>
+            </div>
         </div>
     </section>
 
+<<<<<<< HEAD
     <!-- Works -->
-    <section id="works">
+    <section id="works" class="section">
+        <div class="section_container">
+            <h1>My Works</h1>
+            <h3>Projects Category</h3>
+            <div class="work_categories">
+                <button class="category_btn active">
+                    All <span class="category_count">3</span>
+                </button>
+                <button class="category_btn">
+                    Web <span class="category_count">1</span>
+                </button>
+                <button class="category_btn">
+                    Mobile <span class="category_count">1</span>
+                </button>
+                <button class="category_btn">
+                    Graphics <span class="category_count">1</span>
+                </button>
+            </div>
+            <div class="work_projects">
+                <a href="#" class="project" target="_blank">
+                    <img class="project_img" src="img/projects/최종.jpg" alt="벤쿠버포스터 최종">
+                    <div class="project_description">
+                        <h3>한국전통예술원 2023년 밴쿠버 정기공연</h3>
+                        <span>Poster Graphic Design <br>with Adobe Illustrator</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="_blank">
+                    <img class="project_img" src="img/projects/wconcept_clone.png" alt="W컨셉 쇼핑몰 메인페이지 클론코딩">
+                    <div class="project_description">
+                        <h3>온라인 편집샵 Wconcept 메인페이지</h3>
+                        <span>Clone coding <br>with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="_blank">
+                    <img class="project_img" src="img/projects/5.png" alt="모바일 어플 기획 및 디자인">
+                    <div class="project_description">
+                        <h3>모바일 어플 "Mi Favo"</h3>
+                        <span>모바일 어플 기획 및 디자인 <br>with Figma</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+        <div class="section_container">
+            <h1>Testimonials</h1>
+            <h3>See what they say about me</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="img/testimonials/anonymous.png" alt="">
+                    <div class="testimonial_speechBubble">
+                        <p>준비중…</p>
+                        <p class="testimonial_company">
+                            <span>name</span> 
+                            <a href="#">/ where working at</a></p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img src="img/testimonials/anonymous.png" alt="">
+                    <div class="testimonial_speechBubble">
+                        <p>준비중…</p>
+                        <p class="testimonial_company">
+                            <span>name</span> 
+                            <a href="#">/ where working at</a></p>
+                    </div>
+                </div>
+=======
+    <!-- Work -->
+    <section id="work">
         <h1>My Works</h1>
         <h3>Projects Category</h3>
         <div class="work_catoeries">
@@ -193,32 +259,40 @@
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
         <div class="testimonial">
-            <img src="img/testimonials/anonymous.png" alt="">
+            <i class="fa-solid fa-user"></i>
             <div class="testimonail_speechBubble">
                 <p>준비중</p>
                 <p class="name"><a href="#">name</a>where he/she works</p>
             </div>
         </div>
         <div class="testimonial">
-            <img src="img/testimonials/anonymous.png" alt="">
+            <i class="fa-solid fa-user"></i>
             <div class="testimonail_speechBubble">
                 <p>준비중</p>
                 <p class="name"><a href="#">name</a>where he/she works</p>
+>>>>>>> parent of 2cc9fb5 (CSS: Home + Intro)
             </div>
         </div>
     </section>
     <!-- Contact -->
-    <section id="contact">
-        <h1 class="contact_title">Contact Me :)</h1>
-        <h2 class="contact_email">cjangel0503@naver.com</h2>
-        <div class="contact_links">
-            <a href=""><i class="fa-brands fa-square-github"></i></a>
-            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+<<<<<<< HEAD
+    <section id="contact" class="section">
+        <div class="section_container">
+            <h1 class="contact_title">Contact Me :)</h1>
+            <h2 class="contact_email">cjangel0503@naver.com</h2>
+            <div class="contact_links">
+                <a href=""><i class="fa-brands fa-square-github"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p class="contact_rights">
+                2022 Chanjoo Park - All rights reserved
+            </p>
         </div>
-        <p class="contact_rights">
-            2022 Chanjoo Park - All rights reserved
-        </p>
+=======
+    <section id="contact">
+        <h1></h1>
+>>>>>>> parent of 2cc9fb5 (CSS: Home + Intro)
     </section>
 </body>
 </html>
